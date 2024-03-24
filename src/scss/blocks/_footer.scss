@@ -1,0 +1,134 @@
+.footer {
+  background-image: url(./../img/bg-footer.png);
+  padding: 24px 0 60px;
+  font-size: 14px;
+  color: #fff;
+
+  &__logo {
+    width: 215.5px;
+    height: 41px;
+    background-image: url(./../img/logo-footer.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  &__item {
+    font-weight: 700;
+    a {
+      color: inherit;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__copyright {
+    max-width: 280px;
+  }
+  &__border {
+    padding: 20px 0;
+    &--mobile {
+      display: none;
+    }
+  }
+  &__line--dark,
+  &__line--light {
+    height: 1px;
+  }
+  &__line--dark {
+    background-color: #262626;
+    margin-bottom: 3px;
+  }
+  &__line--light {
+    background-color: #faf4f0;
+    opacity: 0.5;
+  }
+  &__text + &__text {
+    margin-top: 16px;
+  }
+
+  @media (max-width: 1200px) {
+    // font-size: 26px;
+  }
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media (max-width: 1220px) {
+  .footer {
+    padding: 24px 0 40px;
+    &__list {
+      flex-wrap: wrap;
+      gap: 12px 0px;
+      max-width: 247px;
+      li + li {
+        margin-left: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 990px) {
+  .footer {
+    padding: 20px 0 30px;
+    font-size: 12px;
+    &__menu {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+    &__logo {
+      width: 283px;
+      height: 34px;
+      background-image: url(./../img/logo-footer-mobile.svg);
+    }
+    &__border {
+      &--mobile {
+        display: block;
+        width: 100vw;
+        padding: 20px 0;
+      }
+    }
+    &__list {
+      justify-content: space-around;
+      li + li {
+        margin-left: 0;
+      }
+    }
+    &__info {
+      flex-direction: column-reverse;
+      gap: 30px;
+    }
+    &__copyright {
+      max-width: 100%;
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+  .social{
+    flex-direction: column;
+  }
+}

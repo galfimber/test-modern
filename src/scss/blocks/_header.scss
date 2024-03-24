@@ -1,0 +1,19 @@
+.header {
+	padding: 24px 0;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+@media (max-width: 1220px){
+	.header{
+		padding: 15px 0;
+	}
+}
+@media (max-width: 990px){
+	.header{
+		padding: 13px 0;
+	}
+}

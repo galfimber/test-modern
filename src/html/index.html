@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>DreamCreditMarker</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/index.bundle.js" defer></script>
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <div class="page-name">
+      <div class="container">
+        <div class="page-name__links">
+          <a href="#!" class="page-name__link">Best credit offers</a>
+          <a href="#!" class="page-name__link">Contact Us</a>
+        </div>
+        <div class="page-name__info">
+          <h1 class="title-1">CONTACT US</h1>
+          <img class="page-name__img--big" src="./img/brace.svg" alt="brace" />
+          <img
+            class="page-name__img--small"
+            src="./img/brace-mobile.svg"
+            alt="brace"
+          />
+          <p class="page-name__text">
+            We welcome your comments, questions, or <br class="br-625" />
+            any request you may have! If you would like <br class="br-625" />
+            to contact our staff, please complete the form below.<br /><br />
+            We will respond to your inquiries ASAP!
+          </p>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <section class="sectionForm">
+        <div class="container">
+          <h2 class="title-2">WRITE US</h2>
+          <div class="sectionForm__content">
+            <form action="#" class="form" id="form">
+              <div class="form__label">
+                <div class="form__description">Subject<span>*</span>:</div>
+                <select
+                  name="subject"
+                  class="form__el form__select"
+                  data-req="req"
+                >
+                  <option
+                    value="placeholder"
+                    
+                    selected
+                    hidden
+                    class="select__placeholer"
+                  >
+                    Select Subject
+                  </option>
+                  <option value="Choosing Credit Card">
+                    Choosing Credit Card
+                  </option>
+                  <option value="Credit Card Application Problems">
+                    Credit Card Application Problems
+                  </option>
+                  <option
+                    value="Earning and Redeeming Rewards
+  				"
+                  >
+                    Earning and Redeeming Rewards
+                  </option>
+                  <option
+                    value="Building Credit with Credit Card
+  				"
+                  >
+                    Building Credit with Credit Card
+                  </option>
+                  <option
+                    value="Balance Transfer Issues
+  				"
+                  >
+                    Balance Transfer Issues
+                  </option>
+                  <option
+                    value="Other
+  				"
+                  >
+                    Other
+                  </option>
+                </select>
+              </div>
+              <div class="form__label">
+                <div class="form__description">E-mail<span>*</span>:</div>
+                <input
+                  name="email"
+                  type="email"
+                  class="form__el form__input"
+                  data-req="req"
+                />
+              </div>
+              <div class="form__label">
+                <div class="form__description">Name<span>*</span>:</div>
+                <input
+                  name="name"
+                  type="text"
+                  class="form__el form__input"
+                  data-req="req"
+                />
+              </div>
+              <div class="form__label">
+                <div class="form__description">Phone number:</div>
+                <input name="phone" type="tel" class="form__el form__input" />
+              </div>
+              <div class="form__label">
+                <div class="form__description">Question<span>*</span>:</div>
+                <textarea
+                  name="message"
+                  class="form__el form__textarea"
+                  data-req="req"
+                ></textarea>
+              </div>
+              <div class="form__footer">
+                <div class="form__legend">* required fields</div>
+                <button class="form__btn">SEND</button>
+              </div>
+            </form>
+            <div class="sectionForm__description">
+              <p class="sectionForm__text">
+                All information submitted on this form will remain completely
+                confidential. We <span>DO NOT sell</span> names or email
+                addresses to third parties.
+              </p>
+              <p class="sectionForm__text">
+                Please review our privacy policy for further information.
+              </p>
+              <p class="sectionForm__text">
+                Please note: <br />We <span>DO NOT issue credit cards</span> or
+                have any type of personal credit card account information. If
+                you have questions pertaining to an existing credit card
+                account, please contact the bank that issued the credit card
+                directly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sectionMail">
+        <div class="container">
+          <div class="sectionMail__content">
+            <img src="./../img/mail.svg" alt="mail" />
+            <div class="sectionMail__text">
+              <h3 class="title-3">MAILING ADDRESS:</h3>
+              <p class="sectionMail__address">
+                1680 South Ashland Ave Suit# 3007 Chicago, IL 60608-2013
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sectionBanks">
+        <div class="container">
+          <div class="sectionBanks__wrapper">
+            <h2 class="title-2">CONTACT INFORMATION OF BANKS:</h2>
+            <div class="cards">
+              <div class="card">
+                <img src="./../img/bank-logo-1.png" alt="bank-logo-1" />
+                <div class="card__content">
+                  <div class="card__brace-small"></div>
+                  <div class="card__info">
+                    <div class="card__name">BOFI:</div>
+                    <div class="card__text">
+                      Customer Service: <span>800-955-7070</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./../img/bank-logo-2.png" alt="bank-logo-2" />
+                <div class="card__content">
+                  <div class="card__brace-small"></div>
+                  <div class="card__info">
+                    <div class="card__name">CAPITAL ONE®:</div>
+                    <div class="card__text">
+                      Customer Service: <span>800-955-7070</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./../img/bank-logo-3.png" alt="bank-logo-3" />
+                <div class="card__content">
+                  <div class="card__brace-small"></div>
+                  <div class="card__info">
+                    <div class="card__name">CAPITAL BANK:</div>
+                    <div class="card__text">
+                      Customer Service: <span>800-955-7070</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./../img/bank-logo-4.png" alt="bank-logo-4" />
+                <div class="card__content">
+                  <div class="card__brace-small"></div>
+                  <div class="card__info">
+                    <div class="card__name">CREDIT ONE BANK®:</div>
+                    <div class="card__text">
+                      Customer Service: <span>800-955-7070</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./../img/bank-logo-5.png" alt="bank-logo-5" />
+                <div class="card__content">
+                  <div class="card__brace-small"></div>
+                  <div class="card__info">
+                    <div class="card__name">METABANK:</div>
+                    <div class="card__text">
+                      Customer Service: <span>800-955-7070</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./../img/bank-logo-6.png" alt="bank-logo-6" />
+                <div class="card__content">
+                  <div class="card__brace-small"></div>
+                  <div class="card__info">
+                    <div class="card__name">MID AMERICA BANK:</div>
+                    <div class="card__text">
+                      Customer Service: <span>800-955-7070</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./../img/bank-logo-7.png" alt="bank-logo-7" />
+                <div class="card__content">
+                  <div class="card__brace-small"></div>
+                  <div class="card__info">
+                    <div class="card__name">SIMMONS FIRST:</div>
+                    <div class="card__text">
+                      Customer Service: <span>800-955-7070</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./../img/bank-logo-8.png" alt="bank-logo-8" />
+                <div class="card__content">
+                  <div class="card__brace-small"></div>
+                  <div class="card__info">
+                    <div class="card__name">USAA:</div>
+                    <div class="card__text">
+                      Customer Service: <span>800-955-7070</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html') @@include('blocks/popup.html')
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

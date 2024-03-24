@@ -1,0 +1,29 @@
+:root {
+  --container-width: 1440px;
+  --container-padding: 40px;
+
+  --font-main: "Arial", sans-serif;
+
+  --page-bg: #fff;
+  --page-bg-accent: #cfefff;
+  --popup-bg: #fff3c4;
+  --text-color: #4d4d4d;
+  --accent: #009ee8;
+  --error: #ef5c53;
+  --nav-menu: #005898;
+  --select-placeholder: #b3b3b3;
+  --select-option: #4d4d4d;
+  @media (max-width: 990px) {
+    --container-width: 767px;
+    --container-padding: 23px;
+  }
+  @media (max-width: 625px) {
+    --container-width: 319px;
+    --container-padding: 16px;
+  }
+}
+
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}

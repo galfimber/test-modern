@@ -1,0 +1,136 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  &__logo {
+    width: 408px;
+    height: 49px;
+    background-image: url(./../img/logo-header.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 266px;
+  }
+  &__input {
+    width: calc(100% - 32px);
+    height: 32px;
+    border: 1px solid #b3b3b3;
+    border-right: none;
+    padding: 0 5px;
+  }
+  &__btn {
+    width: 32px;
+    height: 32px;
+    background-color: var(--accent);
+    background-image: url(./../img/search.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: var(--nav-menu);
+  }
+  &__icon {
+    position: relative;
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      left: 0;
+      width: 18px;
+      height: 2px;
+      background-color: #fff;
+    }
+    &::before {
+      top: -5px;
+    }
+    &::after {
+      top: 5px;
+    }
+  }
+}
+@media (max-width: 1220px) {
+  .nav {
+    &__logo {
+      width: 205px;
+      height: 57px;
+      background-image: url(./../img/logo-header-small.svg);
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .nav {
+    flex-direction: column;
+    gap: 4px;
+    &__logo {
+      width: 205px;
+      height: 58.5px;
+      background-image: url(./../img/logo-header-small.svg);
+    }
+    &__list {
+      gap: 20px;
+    }
+    &__search {
+      max-width: 100%;
+      width: 100%;
+    }
+    &__input {
+      width: calc(100% - 32px);
+    }
+  }
+}
+@media (max-width: 625px) {
+  .nav {
+    flex-direction: row;
+    &__menu {
+      display: flex;
+    }
+    &__logo {
+      width: 168px;
+      height: 32px;
+      margin-right: 33px;
+      background-image: url(./../img/logo-header-mobile.svg);
+    }
+    &__list {
+      display: none;
+    }
+    &__input {
+      height: 35px;
+      position: absolute;
+      width: 200px;
+      right: 0;
+    }
+    &__btn {
+      width: 35px;
+      height: 35px;
+    }
+    &__search {
+      width: 35px;
+      overflow: hidden;
+    }
+  }
+}

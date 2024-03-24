@@ -1,0 +1,61 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 60px 0;
+}
+
+.card {
+  display: flex;
+  gap: 10px;
+  width: 305px;
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__brace-small {
+    width: 8px;
+    height: 78.75px;
+    flex-shrink: 0;
+    background-image: url(./../img/brace-small.svg);
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__name {
+    color: var(--accent);
+    font-size: 16px;
+  }
+  &__text span {
+    font-weight: 700;
+  }
+}
+@media (max-width: 1400px) {
+  .cards {
+    justify-content: center;
+  }
+}
+@media (max-width: 990px) {
+  .cards {
+    gap: 40px 0;
+  }
+}
+@media (max-width: 625px) {
+  .cards {
+    gap: 20px 0;
+  }
+  .card {
+    gap: 13px;
+    width: 100%;
+    padding-right: 0;
+    img {
+      width: 80px;
+    }
+    &__content {
+      gap: 13px;
+    }
+  }
+}
