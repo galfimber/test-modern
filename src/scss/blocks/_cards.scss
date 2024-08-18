@@ -31,6 +31,7 @@
   }
   &__text span {
     font-weight: 700;
+    white-space: nowrap;
   }
 }
 @media (max-width: 1400px) {
@@ -40,7 +41,7 @@
 }
 @media (max-width: 990px) {
   .cards {
-    gap: 40px 0;
+    gap: 40px 40px;
   }
 }
 @media (max-width: 625px) {
@@ -49,7 +50,7 @@
   }
   .card {
     gap: 13px;
-    width: 100%;
+    max-width: 350px;
     padding-right: 0;
     img {
       width: 80px;

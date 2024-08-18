@@ -7,10 +7,6 @@
   &__logo {
     width: 215.5px;
     height: 41px;
-    background-image: url(./../img/logo-footer.svg);
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
   }
   &__menu {
     display: flex;
@@ -92,7 +88,7 @@
     }
   }
 }
-@media (max-width: 990px) {
+@media (max-width: 767px) {
   .footer {
     padding: 20px 0 30px;
     font-size: 12px;
@@ -103,7 +99,7 @@
     &__logo {
       width: 283px;
       height: 34px;
-      background-image: url(./../img/logo-footer-mobile.svg);
+      // background-image: url(./../img/logo-footer-mobile.svg);
     }
     &__border {
       &--mobile {

@@ -5,10 +5,27 @@
   &__logo {
     width: 408px;
     height: 49px;
-    background-image: url(./../img/logo-header.svg);
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &--text {
+      width: 179px;
+      position: relative;
+      margin-left: 12px;
+      padding-left: 12px;
+      font-size: 16px;
+      color: var(--accent);
+      &::before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        left: 0;
+        width: 1px;
+        height: 49px;
+        background-color: var(--accent);
+      }
+    }
   }
   &__row {
     display: flex;
@@ -40,6 +57,9 @@
     background-image: url(./../img/search.svg);
     background-position: center;
     background-repeat: no-repeat;
+    &:hover {
+      background-color: var(--btn-hover);
+    }
   }
   &__menu {
     display: none;
@@ -77,7 +97,16 @@
     &__logo {
       width: 205px;
       height: 57px;
-      background-image: url(./../img/logo-header-small.svg);
+      &--text {
+        width: auto;
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 5px;
+        font-size: 12px;
+        &::before {
+          display: none;
+        }
+      }
     }
   }
 }
@@ -89,7 +118,6 @@
     &__logo {
       width: 205px;
       height: 58.5px;
-      background-image: url(./../img/logo-header-small.svg);
     }
     &__list {
       gap: 20px;
@@ -106,6 +134,7 @@
 @media (max-width: 625px) {
   .nav {
     flex-direction: row;
+    gap: 16px;
     &__menu {
       display: flex;
     }
@@ -113,7 +142,9 @@
       width: 168px;
       height: 32px;
       margin-right: 33px;
-      background-image: url(./../img/logo-header-mobile.svg);
+      &--text {
+        display: none;
+      }
     }
     &__list {
       display: none;
@@ -122,7 +153,7 @@
       height: 35px;
       position: absolute;
       width: 200px;
-      right: 0;
+      right: 35px;
     }
     &__btn {
       width: 35px;

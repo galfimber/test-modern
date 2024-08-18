@@ -3,8 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DreamCreditMarker</title>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <!-- select2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" defer></script>
+    <!-- inputmask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js" defer></script>
+    <!-- main style and script -->
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/index.bundle.js" defer></script>
   </head>
@@ -25,9 +36,11 @@
             alt="brace"
           />
           <p class="page-name__text">
-            We welcome your comments, questions, or <br class="br-625" />
-            any request you may have! If you would like <br class="br-625" />
-            to contact our staff, please complete the form below.<br /><br />
+            We welcome your comments, questions, or 
+            any request you may have! If you would like 
+            to contact our staff, please complete the form 
+            below.
+
             We will respond to your inquiries ASAP!
           </p>
         </div>
@@ -45,16 +58,10 @@
                   name="subject"
                   class="form__el form__select"
                   data-req="req"
+                  id="form__select"
                 >
-                  <option
-                    value="placeholder"
-                    
-                    selected
-                    hidden
-                    class="select__placeholer"
-                  >
-                    Select Subject
-                  </option>
+                  <div class="form__select--bg"></div>
+                  <option></option>
                   <option value="Choosing Credit Card">
                     Choosing Credit Card
                   </option>
@@ -62,27 +69,19 @@
                     Credit Card Application Problems
                   </option>
                   <option
-                    value="Earning and Redeeming Rewards
-  				"
-                  >
+                    value="Earning and Redeeming Rewards">
                     Earning and Redeeming Rewards
                   </option>
                   <option
-                    value="Building Credit with Credit Card
-  				"
-                  >
+                    value="Building Credit with Credit Card">
                     Building Credit with Credit Card
                   </option>
                   <option
-                    value="Balance Transfer Issues
-  				"
-                  >
+                    value="Balance Transfer Issues">
                     Balance Transfer Issues
                   </option>
                   <option
-                    value="Other
-  				"
-                  >
+                    value="Other">
                     Other
                   </option>
                 </select>
@@ -107,7 +106,12 @@
               </div>
               <div class="form__label">
                 <div class="form__description">Phone number:</div>
-                <input name="phone" type="tel" class="form__el form__input" />
+                <input
+                  name="phone"
+                  type="tel"
+                  class="form__el form__input"
+                  id="input-tel"
+                />
               </div>
               <div class="form__label">
                 <div class="form__description">Question<span>*</span>:</div>
@@ -145,7 +149,7 @@
       <section class="sectionMail">
         <div class="container">
           <div class="sectionMail__content">
-            <img src="./../img/mail.svg" alt="mail" />
+            <img src="./img/mail.svg" alt="mail" />
             <div class="sectionMail__text">
               <h3 class="title-3">MAILING ADDRESS:</h3>
               <p class="sectionMail__address">
@@ -161,7 +165,7 @@
             <h2 class="title-2">CONTACT INFORMATION OF BANKS:</h2>
             <div class="cards">
               <div class="card">
-                <img src="./../img/bank-logo-1.png" alt="bank-logo-1" />
+                <img src="./img/bank-logo-1.png" alt="bank-logo-1" />
                 <div class="card__content">
                   <div class="card__brace-small"></div>
                   <div class="card__info">
@@ -173,7 +177,7 @@
                 </div>
               </div>
               <div class="card">
-                <img src="./../img/bank-logo-2.png" alt="bank-logo-2" />
+                <img src="./img/bank-logo-2.png" alt="bank-logo-2" />
                 <div class="card__content">
                   <div class="card__brace-small"></div>
                   <div class="card__info">
@@ -185,7 +189,7 @@
                 </div>
               </div>
               <div class="card">
-                <img src="./../img/bank-logo-3.png" alt="bank-logo-3" />
+                <img src="./img/bank-logo-3.png" alt="bank-logo-3" />
                 <div class="card__content">
                   <div class="card__brace-small"></div>
                   <div class="card__info">
@@ -197,7 +201,7 @@
                 </div>
               </div>
               <div class="card">
-                <img src="./../img/bank-logo-4.png" alt="bank-logo-4" />
+                <img src="./img/bank-logo-4.png" alt="bank-logo-4" />
                 <div class="card__content">
                   <div class="card__brace-small"></div>
                   <div class="card__info">
@@ -209,7 +213,7 @@
                 </div>
               </div>
               <div class="card">
-                <img src="./../img/bank-logo-5.png" alt="bank-logo-5" />
+                <img src="./img/bank-logo-5.png" alt="bank-logo-5" />
                 <div class="card__content">
                   <div class="card__brace-small"></div>
                   <div class="card__info">
@@ -221,7 +225,7 @@
                 </div>
               </div>
               <div class="card">
-                <img src="./../img/bank-logo-6.png" alt="bank-logo-6" />
+                <img src="./img/bank-logo-6.png" alt="bank-logo-6" />
                 <div class="card__content">
                   <div class="card__brace-small"></div>
                   <div class="card__info">
@@ -233,7 +237,7 @@
                 </div>
               </div>
               <div class="card">
-                <img src="./../img/bank-logo-7.png" alt="bank-logo-7" />
+                <img src="./img/bank-logo-7.png" alt="bank-logo-7" />
                 <div class="card__content">
                   <div class="card__brace-small"></div>
                   <div class="card__info">
@@ -245,7 +249,7 @@
                 </div>
               </div>
               <div class="card">
-                <img src="./../img/bank-logo-8.png" alt="bank-logo-8" />
+                <img src="./img/bank-logo-8.png" alt="bank-logo-8" />
                 <div class="card__content">
                   <div class="card__brace-small"></div>
                   <div class="card__info">

@@ -64,6 +64,7 @@
   .page-name {
     padding: 30px 0;
     background-position: center;
+    white-space: pre-line;
     &__info {
       flex-direction: column;
       gap: 10px;

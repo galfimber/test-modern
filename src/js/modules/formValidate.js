@@ -20,23 +20,39 @@ const sendForm = () => {
     try {
       formElements.forEach((input) => {
         input.classList.remove("form__error");
+        document
+          .querySelector(".select2-selection--single")
+          .classList.remove("form__error");
+          document.querySelector(
+            ".select2-selection__placeholder"
+          ).style.color = "";
       });
+      let isError = false;
       formData.forEach((val, key) => {
-        if (key === "subject" && val === "placeholder") {
-          document.getElementsByName(key)[0].classList.add("form__error");
-          throw new Error("Заполните поле Subject");
+        if (key === "subject" && val === "") {
+          document
+            .querySelector(".select2-selection--single")
+            .classList.add("form__error");
+          document.querySelector(
+            ".select2-selection__placeholder"
+          ).style.color = "#ef5c53";
+          isError = true;
         } else if (key === "email" && val === "") {
           document.getElementsByName(key)[0].classList.add("form__error");
-          throw new Error("Заполните поле E-mail");
+          isError = true;
         } else if (key === "name" && val === "") {
           document.getElementsByName(key)[0].classList.add("form__error");
-          throw new Error("Заполните поле Name");
+          isError = true;
         } else if (key === "message" && val === "") {
           document.getElementsByName(key)[0].classList.add("form__error");
-          throw new Error("Заполните поле Question");
+          isError = true;
         }
+
         formBody[key] = val;
       });
+      if (isError) {
+        throw new Error("Заполните обязательные поля");
+      }
       console.log(formBody);
     } catch (error) {
       console.log(error.message);

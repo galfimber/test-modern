@@ -13,12 +13,13 @@
   --nav-menu: #005898;
   --select-placeholder: #b3b3b3;
   --select-option: #4d4d4d;
+  --btn-hover: #0887cc;
   @media (max-width: 990px) {
     --container-width: 767px;
     --container-padding: 23px;
   }
   @media (max-width: 625px) {
-    --container-width: 319px;
+    --container-width: 100%;
     --container-padding: 16px;
   }
 }
