@@ -23,9 +23,6 @@ const sendForm = () => {
         document
           .querySelector(".select2-selection--single")
           .classList.remove("form__error");
-          document.querySelector(
-            ".select2-selection__placeholder"
-          ).style.color = "";
       });
       let isError = false;
       formData.forEach((val, key) => {
