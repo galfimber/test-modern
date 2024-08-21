@@ -57,6 +57,7 @@
     background-image: url(./../img/search.svg);
     background-position: center;
     background-repeat: no-repeat;
+    transition: .2s ease-in;
     &:hover {
       background-color: var(--btn-hover);
     }

@@ -20,3 +20,12 @@ Inputmask("1-999-999-9999", {
   greedy: false,
   clearMaskOnLostFocus: true,
 }).mask(inputTel);
+
+inputTel.addEventListener("mouseenter", () => {
+  console.log(inputTel.value);
+  if (inputTel.value.length > 0) {
+    inputTel.style.color = "inherit";
+  } else {
+    inputTel.style.color = "";
+  }
+});
